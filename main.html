@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thank You • Development Team</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#050505;
+    color:#fff;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* Animated Background */
+
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    width:700px;
+    height:700px;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:-2;
+    animation:float 18s ease-in-out infinite alternate;
+}
+
+body::before{
+    background:#3b82f633;
+    top:-220px;
+    left:-220px;
+}
+
+body::after{
+    background:#8b5cf633;
+    bottom:-220px;
+    right:-220px;
+    animation-delay:6s;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(-30px) translateX(-20px);
+    }
+    to{
+        transform:translateY(40px) translateX(20px);
+    }
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:65px;
+
+    box-shadow:
+    0 25px 80px rgba(0,0,0,.45),
+    inset 0 1px 0 rgba(255,255,255,.05);
+}
+
+.small-title{
+    color:#7d7d87;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-size:.82rem;
+    font-weight:600;
+    text-align:center;
+}
+
+h1{
+    margin-top:18px;
+    text-align:center;
+    font-size:3.2rem;
+    font-weight:800;
+}
+
+.description{
+    margin:30px auto 55px;
+    max-width:700px;
+    text-align:center;
+    color:#b7b7c0;
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+.team{
+    display:grid;
+    gap:18px;
+}
+
+.member{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:22px 28px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    border-radius:18px;
+
+    transition:.3s ease;
+}
+
+.member:hover{
+    transform:translateY(-5px);
+    border-color:#4f8cff;
+    background:rgba(79,140,255,.08);
+}
+
+.role{
+    color:#69a8ff;
+    font-size:.95rem;
+    font-weight:600;
+    letter-spacing:.5px;
+}
+
+.name{
+    font-size:1.05rem;
+    font-weight:500;
+}
+
+.footer{
+    margin-top:55px;
+    text-align:center;
+    color:#7d7d86;
+    line-height:1.8;
+    font-size:.92rem;
+}
+
+/* ---------- Tablet ---------- */
+
+@media (max-width:900px){
+
+.container{
+    padding:50px 40px;
+}
+
+h1{
+    font-size:2.6rem;
+}
+
+.description{
+    font-size:1rem;
+}
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:600px){
+
+body{
+    align-items:flex-start;
+    padding:20px 10px;
+}
+
+.container{
+    padding:35px 22px;
+    border-radius:18px;
+}
+
+.small-title{
+    font-size:.75rem;
+}
+
+h1{
+    font-size:2rem;
+}
+
+.description{
+    margin:22px auto 35px;
+    font-size:.95rem;
+    line-height:1.8;
+}
+
+.member{
+    flex-direction:column;
+    text-align:center;
+    gap:8px;
+    padding:18px;
+}
+
+.role{
+    font-size:.85rem;
+}
+
+.name{
+    font-size:1rem;
+}
+
+.footer{
+    margin-top:35px;
+    font-size:.82rem;
+}
+
+}
+
+/* ---------- Large Monitors ---------- */
+
+@media (min-width:1400px){
+
+.container{
+    max-width:1000px;
+}
+
+h1{
+    font-size:3.6rem;
+}
+
+.description{
+    font-size:1.12rem;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="small-title">
+FINAL MESSAGE
+</div>
+
+<h1>Thank You ❤️</h1>
+
+<div class="description">
+After countless hours of development, planning, and support, we've made the difficult decision to officially discontinue this project.
+
+<br><br>
+
+Unfortunately, we no longer have the time to properly maintain and operate this website. While this chapter comes to an end, we're incredibly grateful for every member of the community who supported us throughout the journey.
+
+<br><br>
+
+A special thank you goes out to the amazing team below. Without their dedication, patience, and countless hours of work, none of this would have been possible.
+</div>
+
+<div class="team">
+
+<div class="member">
+<div class="role">👑 Owner</div>
+<div class="name">Iack</div>
+</div>
+
+<div class="member">
+<div class="role">💻 Developer</div>
+<div class="name">skirrboy</div>
+</div>
+
+<div class="member">
+<div class="role">🛡️ Manager</div>
+<div class="name">Batman</div>
+</div>
+
+<div class="member">
+<div class="role">⭐ Staff</div>
+<div class="name">yoyo • steel • xanz</div>
+</div>
+
+</div>
+
+<div class="footer">
+Thank you for being part of our journey.<br>
+We wish everyone nothing but success in the future.<br><br>
+
+© 2026 • Project Archive
+</div>
+
+</div>
+
+</body>
+</html>
